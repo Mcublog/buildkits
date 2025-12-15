@@ -1,9 +1,9 @@
 # README
 
-При сборке возникла проблемы со скачиванием д
+При сборке возникла проблемы со скачиванием архивов с исходниками.
 
 ```bash
-docker build -t mcublog/u16buildkit_x32:13 -f ./u16buildkit_x32.dockerfile .
+docker build -t mcublog/u16buildkit_x32:5 -f ./u16buildkit_x32.dockerfile .
 ```
 
 ```bash
