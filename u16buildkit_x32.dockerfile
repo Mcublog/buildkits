@@ -3,7 +3,6 @@ FROM i386/ubuntu:16.04
 RUN apt-get update && \
     apt-get install -y \
     build-essential \
-    build-essential \
     libgmp-dev \
     libmpfr-dev \
     libmpc-dev \
@@ -14,6 +13,11 @@ RUN apt-get update && \
     libxext-dev \
     libxrender-dev \
     libxrandr-dev \
+    libfltk1.3-dev \
+    libsm-dev \
+    libxinerama-dev \
+    libxft-dev \
+    libcairo2-dev \
     software-properties-common \
     wget
 

@@ -7,13 +7,17 @@ RUN apt-get update && \
     libmpfr-dev \
     libmpc-dev \
     texinfo \
-    libc6-dev \
     libssl-dev \
     libgl1-mesa-dev \
     libx11-dev \
     libxext-dev \
     libxrender-dev \
     libxrandr-dev \
+    libfltk1.3-dev \
+    libsm-dev \
+    libxinerama-dev \
+    libxft-dev \
+    libcairo2-dev \
     software-properties-common \
     wget
 
