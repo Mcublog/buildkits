@@ -9,6 +9,11 @@ RUN apt-get update && \
     libmpc-dev \
     texinfo \
     libssl-dev \
+    libgl1-mesa-dev \
+    libx11-dev \
+    libxext-dev \
+    libxrender-dev \
+    libxrandr-dev \
     software-properties-common \
     wget
 
