@@ -2,7 +2,8 @@ FROM mcublog/cmake_gcc_mingw
 
 RUN apt-get update && \
     apt-get install -y \
-    fluid
+    fluid \
+    git
 
 RUN git clone --depth 1 --branch release-1.3.11 https://github.com/fltk/fltk.git
 COPY ./toolchain-cross-mingw32.cmake /fltk/toolchain-cross-mingw32.cmake
