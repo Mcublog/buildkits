@@ -19,7 +19,8 @@ RUN apt-get update && \
     libxft-dev \
     libcairo2-dev \
     software-properties-common \
-    wget
+    wget \
+    git
 
 # RUN add-apt-repository -y ppa:ubuntu-toolchain-r/test && apt-get update && apt install -y gcc-9 g++-9 && \
 #     rm -rf /var/lib/apt/lists/*
