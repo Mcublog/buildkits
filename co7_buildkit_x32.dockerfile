@@ -9,6 +9,7 @@ RUN yum install -y \
     gcc \
     gcc-c++ \
     binutils \
+    openssl-devel \
     make \
     git \
     && yum clean all
@@ -16,4 +17,4 @@ RUN yum install -y \
 ARG CMAKE_VERSION=4.1.2
 COPY ./cmake-${CMAKE_VERSION} /cmake-${CMAKE_VERSION}
 
-RUN cd cmake-${CMAKE_VERSION} && ./bootstrap -- -DCMAKE_USE_OPENSSL=OFF && make && make install
+RUN cd cmake-${CMAKE_VERSION} && ./bootstrap && make && make install
